@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrapグリッドレイアウト解説</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--文字色が白にならない-->
+<div class="container">
+  <div class="row" style="background-color: #505050;">
+    <div class="col-xs-2">家電とガジェットの新サービス</div>
+    <div class="col-xs-2"><p class="text-right">はてなブックマークって？</p></div>
+    <div class="col-xs-2"><p class="text-right">アプリ・拡張の紹介</p></div>
+    <div class="col-xs-2"><p class="text-right">ユーザ登録</p></div>
+    <div class="col-xs-2"><p class="text-right">ログイン</p></div>
+    <div class="col-xs-2"><p class="text-right">Hatena</p></div>
+  </div>
+
+  <div class="row" >
+    <div class="col-xs-6" ><img src="hatena.JPG" height="70" width="70"/>
+      <strong class="text-muted">はてなブックマーク</strong> <small class="text-muted"> < トップへ戻る</small>
+    </div>
+    <div class="col-xs-6">
+      <form role="form">
+        <div class="form-group">
+          <label for="exampleInputEmail1"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="キーワード・URLを検索">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--文字が折り返してバラバラになってしまう。-->
+  <div class="row" >
+    <div class="col-xs-1"  > <table class="table">
+      <thead>
+      <th>総合</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1">
+      <table class="table">
+        <thead>
+        <th>一般</th>
+        </thead>
+      </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>世の中</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>政治と経済</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>暮らし</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1" ><table class="table">
+      <thead>
+      <th>学び</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>テクノロジー</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>おもしろ</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>エンタメ</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>アニメとゲーム</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1"><table class="table">
+      <thead>
+      <th>家電</th>
+      </thead>
+    </table>
+    </div>
+    <div class="col-xs-1">
+      <table class="table">
+        <thead>
+        <th>おすすめ</th>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col-xs-8" style="border: solid 2px #1e90ff;"><h3 class="text-primary">642Users</h3>
+      <p><strong>Amazonが「世界を食い尽くしている」理由を考える | TechCrunch Japan</strong></p>
+      <p class="text-muted"><small>説明文説明文説明文説明文説明文説明文説明文説明文説明文</small></p>
+      <p><span class="label label-success">暮らし</span><small class="text-muted">　2017/05/16 11:25</small></p>
+      <p class="text-muted"><small>anond.hatelabo.jp</small></p>
+    </div>
+    <div class="col-xs-4" style="border: solid 2px #1e90ff;"><h3 class="text-primary">2Users</h3>
+      <p><strong><small>「実は育児はもっと楽。息子さんは育てにくい子です」心理士の言葉に涙がポロポロ…。 byアマミモヨリ</small></strong></p>
+      <p class="text-muted text-center"><small>画像</small></p>
+      <p>PR<small class="text-muted">リクルートライフスタイル</small></p>
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span><small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span><small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+      <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
+      <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
+      <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
+      <p class="text-muted"><small>www3.nhk.or.jp</small></p>
+      <p><button type="button" class="btn btn-muted btn-xs">皇室</button>
+        <button type="button" class="btn btn-muted btn-xs">結婚</button>
+        <button type="button" class="btn btn-muted btn-xs">後で読む</button>
+        <button type="button" class="btn btn-muted btn-xs">社会</button>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="row" style="background-color: #dddddd;">
+    　<p class="text-center">過去のエントリー</p>
+  </div>
+
+  <div class="row" >
+    <div class="col-xs-6"><h1 class="text-center">広告</h1></div>
+    <div class="col-xs-6"><h1 class="text-center">広告</h1></div>
+  </div>
+
+  <div class="row" >
+    　<p class="text-primary text-right">総合の新着エントリー▲</p>
+  </div>
+
+  <div class="row" >
+    <div class="col-xs-1" style="border:  #00aa00;"><span class="label label-default">特集</span></div>
+  </div>
+
+  <div class="row" >
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="noimage.jpg" height="100" width="150"/>
+      <p><strong>ブロマガ</strong></p>
+      <table class="table">
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="noimage.jpg" height="100" width="150"/>
+      <p><strong>ブロマガ</strong></p>
+      <table class="table">
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+      </table></div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="noimage.jpg" height="100" width="150"/>
+      <p><strong>ブロマガ</strong></p>
+      <table class="table">
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+      </table></div>
+    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="noimage.jpg" height="100" width="150"/>
+      <p><strong>ブロマガ</strong></p>
+      <table class="table">
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr class="active">
+          <td>文章文章文章</td>
+          <td>文章文章文章</td>
+        </tr>
+        </tbody>
+      </table></div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-xs-3">
+      <ul  style="list-style:none">
+        <li>はてなブックマーク</li>
+        <li>トピック</li>
+        <li>ヘッドライン</li>
+        <li>エリアガイド</li>
+        <li>総合</li>
+        <li>一般</li>
+        <li>世の中</li>
+        <li>政治と経済</li>
+        <li>暮らし</li>
+        <li>学び</li>
+      </ul>
+    </div>
+
+    <div class="col-xs-3">
+      <ul  style="list-style:none">
+        <li>　</li>
+        <li>テクノロジー</li>
+        <li>エンタメ</li>
+        <li>アニメとゲーム</li>
+        <li>おもしろ</li>
+        <li>動画</li>
+        <li>画像</li>
+        <li>ランキング</li>
+        <li>おすすめ</li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul  style="list-style:none">
+        <li>　</li>
+        <li>アプリ・拡張機能</li>
+        <li>開発ブログ</li>
+        <li>ヘルプ</li>
+        <li>スマートフォン版</li>
+      </ul>
+    </div>
+    <div class="col-xs-3">
+      <ul  style="list-style:none">
+        <li>はてなのサービス</li>
+        <li>はてなブログ</li>
+        <li>人力検索はてな</li>
+        <li>はてなキーワード</li>
+        <li>はてなニュース</li>
+        <li>B!KUMA</li>
+        <li>家電会議</li>
+      </ul>
+    </div>
+    <br>
+  </div>
+
+</div>
+</body>
+</html>
+</body>
+</html>
