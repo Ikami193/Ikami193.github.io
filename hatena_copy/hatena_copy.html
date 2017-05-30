@@ -12,10 +12,14 @@
   <link rel="stylesheet" href="style.css">
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <meta content="IE=edge" http-equiv=X-UA-Compatible>
+  <meta content="width=device-width,initial-scale=1" name=viewport>
+
 </head>
 <body>
 <div class="container">
-  <div class="row" style="background-color: #505050;">
+  <div class="row hidden-sm hidden-xs" style="background-color: #505050;">
     <ul class="dropdown">
       <li><a class="dropdown-toggle" href="#">はてなブックマークって？</a></li>
       <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -31,11 +35,19 @@
     </ul>
   </div>
 
+  <div class="row visible-xs visible-sm" style="background-color: #2c6ebd;">
+    <h1>B!</h1>
+  </div>
+
+  <div class="row visible-xs visible-sm">
+    <p>トップ>カテゴリ>総合>　人気</p>
+  </div>
+
   <div class="row" >
-    <div class="col-xs-6" ><img src="hatena.JPG" alt="thum01" height="70" width="70"/>
+    <div class="col-xs-6 hidden-xs hidden-sm" ><img src="hatena.JPG" alt="thum01" height="70" width="70"/>
       <strong class="text-muted">はてなブックマーク</strong> <small class="text-muted"> < トップへ戻る</small>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-6 hidden-xs hidden-sm">
       <form role="form">
         <div class="form-group">
           <label for="exampleInputEmail1"></label>
@@ -47,7 +59,7 @@
   </div>
 
   <div class="row" >
-    <div class="col-xs-12" style="border-bottom: solid 3px #777777;">
+    <div class="col-xs-12 hidden-xs hidden-sm" style="border-bottom: solid 3px #777777;">
       <ul class="list-inline" style="list-style: none">
         <li id="sogo" >総合</li>
         <li>一般</li>
@@ -62,16 +74,30 @@
         <li>家電</li>
         <li>おすすめ</li>
       </ul>
+    </div>
   </div>
 
+    <div class="row visible-xs visible-sm"  style="background-color: #c9dcf1;">
+      <p class="entry" >最近の人気エントリー</p>
+    </div>
+
+    <div class="row"  style="background-color: #e5e9ea;">
+      <div class="col-xs-6 visible-xs visible-sm">
+        <p class="select" >人気</p>
+      </div>
+      <div class="col-xs-6 visible-xs visible-sm">
+        <p class="select" >新着</p>
+      </div>
+    </div>
+
   <div class="row" >
-    <div class="col-xs-8" style="border: solid 2px #1e90ff;"><h3 class="text-primary">642Users</h3>
+    <div class="col-sm-12 col-md-8" style="border: solid 1px #E5E9EA;"><h3 class="text-primary">642Users</h3>
       <p><strong>Amazonが「世界を食い尽くしている」理由を考える | TechCrunch Japan</strong></p>
       <p class="text-muted"><small>説明文説明文説明文説明文説明文説明文説明文説明文説明文</small></p>
       <p><span class="label label-success">暮らし</span><small class="text-muted">　2017/05/16 11:25</small></p>
       <p class="text-muted"><small>anond.hatelabo.jp</small></p>
     </div>
-    <div class="col-xs-4" style="border: solid 2px #1e90ff;"><h3 class="text-primary">2Users</h3>
+    <div class="col-sm-12 col-md-4" style="border: solid 1px #E5E9EA;"><h3 class="text-primary">2Users</h3>
       <p><strong><small>「実は育児はもっと楽。息子さんは育てにくい子です」心理士の言葉に涙がポロポロ…。 byアマミモヨリ</small></strong></p>
       <p class="text-muted text-center"><small>画像</small></p>
       <p>PR<small class="text-muted">リクルートライフスタイル</small></p>
@@ -79,7 +105,7 @@
   </div>
 
   <div class="row" >
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span><small class="text-muted">　2017/05/16 19:02</small></p>
@@ -90,7 +116,7 @@
         <button type="button" class="btn btn-muted btn-xs">社会</button>
       </p>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
@@ -101,7 +127,7 @@
         <button type="button" class="btn btn-muted btn-xs">社会</button>
       </p>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span><small class="text-muted">　2017/05/16 19:02</small></p>
@@ -112,7 +138,7 @@
         <button type="button" class="btn btn-muted btn-xs">社会</button>
       </p>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
@@ -123,7 +149,7 @@
         <button type="button" class="btn btn-muted btn-xs">社会</button>
       </p>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
@@ -134,7 +160,7 @@
         <button type="button" class="btn btn-muted btn-xs">社会</button>
       </p>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
@@ -145,7 +171,7 @@
         <button type="button" class="btn btn-muted btn-xs">社会</button>
       </p>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
@@ -156,7 +182,7 @@
         <button type="button" class="btn btn-muted btn-xs">社会</button>
       </p>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><h3 class="text-warning">242Users</h3>
+    <div class="col-sm-12 col-md-3" style="border: solid 1px #E5E9EA;"><h3 class="text-warning">242Users</h3>
       <p><strong>眞子さま同級生とご婚約へ｜<br>NHKニュース</strong></p>
       <p class="text-muted"><small>秋篠宮ご夫妻の長女の眞子さまが、大学時代の同級生の男性と婚約される見通しになりました。結婚の時期は、来年が想定されているということです。</small></p>
       <p><span class="label label-warning">世の中</span> <small class="text-muted">　2017/05/16 19:02</small></p>
@@ -225,7 +251,7 @@
   </div>
 
   <div class="row" >
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum05" class="img-thumbnail"/>
+    <div class="col-sm-12 col-md-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum05" class="img-thumbnail"/>
       <p><strong>ブロマガ</strong></p>
       <table class="table">
         <tbody>
@@ -248,7 +274,7 @@
         </tbody>
       </table>
     </div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum06" class="img-thumbnail"/>
+    <div class="col-sm-12 col-md-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum06" class="img-thumbnail"/>
       <p><strong>ブロマガ</strong></p>
       <table class="table">
         <tbody>
@@ -270,7 +296,7 @@
         </tr>
         </tbody>
       </table></div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum07" class="img-thumbnail"/>
+    <div class="col-sm-12 col-md-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum07" class="img-thumbnail"/>
       <p><strong>ブロマガ</strong></p>
       <table class="table">
         <tbody>
@@ -292,7 +318,7 @@
         </tr>
         </tbody>
       </table></div>
-    <div class="col-xs-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum08" class="img-thumbnail"/>
+    <div class="col-sm-12 col-md-3" style="border: solid 2px #1e90ff;"><img src="gazo_kari.png" alt="thum08" class="img-thumbnail"/>
       <p><strong>ブロマガ</strong></p>
       <table class="table">
         <tbody>
@@ -316,8 +342,135 @@
       </table></div>
   </div>
 
+  <div class="row">
+    <div class=" visible-xs visible-sm" style="background-color: #2c6ebd;">
+     <p class="bookmark">他のエントリーを探す</p>
+    </div>
+    <div class= "visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="popular">昨日の人気エントリーを読む</p>
+    </div>
+    <div class="visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="new">新着エントリーを読む</p>
+    </div>
+    <div class="visible-xs visible-sm" style="background-color: #F7F7F7;">
+     <p class="feature">特集で絞り込む</p>
+    </div>
+    <div class="visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="category">公式アカウント</p>
+    </div>
+    <div class="visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="category">動画</p>
+    </div>
+    <div class="visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="category">画像</p>
+    </div>
+    <div class=" visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="category">SNS</p>
+    </div>
+    <div class="visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="category">ブログ・日記</p>
+    </div>
+  </div>
 
-</div>
+  <div class="row" style="background-color: #dddddd;">
+    　<p class="text-center">もっと見る</p>
+  </div>
+
+  <div class="row">
+    <div class="visible-xs visible-sm" style="background-color: #F7F7F7;">
+     <p class="feature">カテゴリ一覧</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+     <p class="category">世の中</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">政治と経済</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">暮らし</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">エンタメ</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">学び</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">テクノロジー</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">アニメとゲーム</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">おもしろ</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">動画</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">画像</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">ガールズ</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">一般</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">おすすめ</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm" style="border-bottom: solid 1px #777777;">
+      <p class="category">ランキング</p>
+    </div>
+  </div>
+
+  <div class="row visible-xs visible-sm">
+    <img src="kokoku01.jpg" alt="thum09" class="img-rounded center-block"/>
+  </div>
+
+  <div class="row"  style="background-color: #E5E9EA; border-top: solid 1px #777777 ">
+    <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+     <p class="footermenu">人気エントリー</p>
+     <p class="footermenu">新着エントリー</p>
+     <p class="footermenu">トピックリスト</p>
+    </div>
+    <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+      <p class="footermenu">ヘッドライン</p>
+      <p class="footermenu">カテゴリ一覧</p>
+      <p class="footermenu">エリアガイド</p>
+    </div>
+    <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+      <p class="footermenu">ランキング</p>
+      <p class="footermenu">はてなニュース</p>
+      <p class="footermenu">家電会議</p>
+    </div>
+    <div class="col-xs-12 col-sm-12 visible-xs visible-sm">
+      <p class="login">ログイン</p>
+    </div>
+    <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+      <p class="help">ヘルプ</p>
+    </div>
+    <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+      <p class="kiyaku">利用規約</p>
+    </div>
+    <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+      <p class="toiawase">お問い合わせ</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm">
+      <p class="hatena">はてな</p>
+    </div>
+    <div class="col-xs-6 col-sm-6 visible-xs visible-sm">
+      <p class="osirase">お知らせ</p>
+    </div>
+    <div class="col-xs-12 col-sm-12 visible-xs visible-sm">
+      <p class="pcban">PC版表示</p>
+    </div>
+  </div>
+
+
 </div>
 </body>
 </html>
