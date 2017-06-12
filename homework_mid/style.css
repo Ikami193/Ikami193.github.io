@@ -1,3 +1,8 @@
+hr {
+  border-width: 1px;
+  border-color: orange;
+}
+
 .carousel .item {
   height: 100%;
 }
@@ -20,10 +25,26 @@ li {
   list-style-position:outside;
 }
 
+.sns{
+  text-align: center;
+}
+
+.history{
+  text-align: center;
+}
+
+.kokoku{
+  text-align: center;
+}
+
 img.kokoku1{
-  margin:20px;
+  margin: 10px;
 }
 
 img.kokoku2{
-  margin:20px;
+  margin: 10px;
+}
+
+img.kokoku3{
+  margin: 10px;
 }
