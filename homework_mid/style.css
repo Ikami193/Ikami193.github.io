@@ -3,6 +3,10 @@ hr {
   border-color: orange;
 }
 
+li.search{
+  padding-left: 59%;
+}
+
 .carousel .item {
   height: 100%;
 }
@@ -32,10 +36,7 @@ img.kokoku1{
   margin: 10px;
 }
 
-img.kokoku2{
-  margin: 10px;
-}
-
-img.kokoku3{
-  margin: 10px;
+.credit{
+  text-align: center;
+  margin: 3px;
 }
